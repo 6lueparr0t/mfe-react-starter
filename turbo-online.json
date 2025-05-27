@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "https://turborepo.org/schema.json",
   "tasks": {
     "dev": {
       "cache": false,

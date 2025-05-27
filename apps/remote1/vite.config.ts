@@ -10,7 +10,7 @@ export default defineConfig({
       name: "remote1",
       filename: "remoteEntry.js", // ✅ 이 이름이 나중에 /assets/remoteEntry.js 로 나옴
       exposes: {
-        "./Button": "./src/components/Button.tsx",
+        "./App": "./src/App.tsx",
       },
       shared: ["react", "react-dom"],
     }),
@@ -22,6 +22,9 @@ export default defineConfig({
     rollupOptions: {
       input: "src/main.tsx", // 또는 entry HTML/TSX 파일
     },
+  },
+  preview: {
+    port: 5001,
   },
   server: {
     port: 5001,

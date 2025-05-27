@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       name: "host",
       remotes: {
-        remote1: "http://localhost:4173/assets/remoteEntry.js",
+        remote1: "http://localhost:5001/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),
@@ -18,6 +18,9 @@ export default defineConfig({
     target: "esnext",
     minify: false,
     cssCodeSplit: false,
+  },
+  preview: {
+    port: 5000,
   },
   server: {
     port: 5000,
