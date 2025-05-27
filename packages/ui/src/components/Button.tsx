@@ -1,12 +1,12 @@
 // packages/ui/src/components/Button.tsx
-import * as React from "react"; // 추가해줘야 오류가 사라짐
+import * as React from "react";
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ children, ...rest }) => {
   return (
     <button
       style={{
@@ -17,8 +17,9 @@ const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
         borderRadius: "4px",
         cursor: "pointer",
         fontSize: "1rem",
+        ...rest.style, // 커스텀 스타일도 허용
       }}
-      onClick={onClick}
+      {...rest}
     >
       {children}
     </button>

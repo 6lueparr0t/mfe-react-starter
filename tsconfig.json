@@ -2,8 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "ui": ["packages/ui/src"]
+      "@mfe/ui": ["packages/ui/src"]
     }
-  },
-  "references": [{ "path": "packages/ui" }, { "path": "apps/host" }]
+  }
 }

@@ -24,10 +24,10 @@ export default defineConfig({
     },
   },
   preview: {
-    port: 5001,
+    port: 5174,
   },
   server: {
-    port: 5001,
+    port: 5174,
     cors: true,
   },
 });

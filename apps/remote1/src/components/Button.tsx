@@ -1,16 +1,13 @@
-// apps/remote1/src/components/Button.tsx
 import { useState } from "react";
+import { Button as UIButton } from "@mfe/ui"; // 💡 이름 변경
 
-const Button = () => {
+const RemoteButton = () => {
   const [count, setCount] = useState(0);
   return (
-    <button
-      style={{ padding: "10px", background: "skyblue" }}
-      onClick={() => setCount((count) => count + 1)}
-    >
+    <UIButton onClick={() => setCount((count) => count + 1)}>
       🌈 Remote Button Count: {count}
-    </button>
+    </UIButton>
   );
 };
 
-export default Button;
+export default RemoteButton;
