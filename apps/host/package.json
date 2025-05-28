@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "@mfe/ui": "workspace:*"
   },
   "devDependencies": {
-    "@mfe/ui": "workspace:*",
     "@eslint/js": "^9.25.0",
     "@originjs/vite-plugin-federation": "^1.4.1",
     "@types/react": "^19.1.2",

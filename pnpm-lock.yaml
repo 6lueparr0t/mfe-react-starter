@@ -20,9 +20,15 @@ importers:
       turbo:
         specifier: ^2.5.3
         version: 2.5.3
+      typescript:
+        specifier: ~5.8.3
+        version: 5.8.3
 
   apps/host:
     dependencies:
+      '@mfe/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -33,9 +39,6 @@ importers:
       '@eslint/js':
         specifier: ^9.25.0
         version: 9.27.0
-      '@mfe/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
       '@originjs/vite-plugin-federation':
         specifier: ^1.4.1
         version: 1.4.1
@@ -72,6 +75,9 @@ importers:
 
   apps/remote1:
     dependencies:
+      '@mfe/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -82,9 +88,6 @@ importers:
       '@eslint/js':
         specifier: ^9.25.0
         version: 9.27.0
-      '@mfe/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
       '@originjs/vite-plugin-federation':
         specifier: ^1.4.1
         version: 1.4.1
