@@ -65,3 +65,5 @@ next-env.d.ts
 .aider.*
 
 .turbo
+*storybook.log
+storybook-static
